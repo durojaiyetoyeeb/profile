@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.profile-card {
+    display: flex;
+    background: white;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Profile Image Hover Effect */
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+.info-section {
+    padding: 20px;
+    flex: 1;
+}
+
+h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.verified {
+    color: #1DA1F2;
+}
+
+.role {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 10px;
+}
+
+.highlights, .skills {
+    list-style: none;
+    padding: 0;
+}
+
+.highlights li, .skills li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.social-btn img {
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-btn img:hover {
+    transform: scale(1.1);
+}
+
+/* Tooltip for Social Icons */
+.tooltip {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Blog Button */
+.blog-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#blogButton {
+    background-color: #1DA1F2;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#blogButton:hover {
+    background-color: #0d8ae1;
+}
+
+#blogButton:active {
+    transform: scale(0.95);
+}
